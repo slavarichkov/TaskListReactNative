@@ -4,7 +4,6 @@ import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import {
   ThemeContextProvider,
-  useTheme,
 } from './src/contexts/theme/ThemeContext';
 import { AuthContextProvider } from './src/contexts/auth/AuthContext';
 import store from './src/redux/store';
