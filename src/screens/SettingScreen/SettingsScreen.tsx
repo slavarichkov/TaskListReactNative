@@ -7,7 +7,7 @@ import { useTheme } from '../../contexts/theme/ThemeContext';
 import { useAuth } from '../../contexts/auth/AuthContext';
 //Reduce
 import { useSelector, useDispatch } from 'react-redux';
-import { onLightTheme, onDarkTheme } from '../../redux/slices/themeSlice';
+import { onLightTheme, onDarkTheme } from '../../redux/slices/theme/themeSlice';
 
 import Button from '../../commonComponents/buttons/Button';
 

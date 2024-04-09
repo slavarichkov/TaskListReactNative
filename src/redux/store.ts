@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 
-import themeReducer from './slices/themeSlice';
+import themeReducer from './slices/theme/themeSlice';
 import tasksReducer from './slices/tasks/taskSlice';
 
 export default configureStore({

@@ -65,10 +65,10 @@ const TaskListScreen = () => {
         data={showingTasks}
         renderItem={ItemList}
         keyExtractor={item => item._id}
-        style={styles.flatList} // Применение стилей к FlatList
+        style={styles.flatList} 
         contentContainerStyle={{ alignItems: 'center', justifyContent: 'center' }}
         ListHeaderComponent={HeaderList}
-        ListFooterComponent={FooterList} // компонент-футер
+        ListFooterComponent={FooterList} 
         ListEmptyComponent={isLoading === "isInitLoading" ? <Loader /> : <></>}
         ItemSeparatorComponent={ItemSeparator}
         refreshing={isLoading === "isRereshing"}
