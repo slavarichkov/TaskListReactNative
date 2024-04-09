@@ -8,7 +8,7 @@ import { TaskType } from '../../models/TaskModel';
 import HeaderListTasks from './components/flatList/HeaderListTasks/HeaderListTasks';
 import ItemListTasks from './components/flatList/ItemListTasks/ItemListTasks';
 import FormAddOrUpdate from './components/forms/FormAddOrUpdate';
-import Loader from '../../components/commonComponents/loaders/Loader';
+import Loader from '../../commonComponents/loaders/Loader';
 
 const TaskListScreen = () => {
   const { colorText, backgroundColor } = useTheme();

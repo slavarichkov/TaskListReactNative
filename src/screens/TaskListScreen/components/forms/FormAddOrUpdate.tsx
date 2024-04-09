@@ -1,8 +1,8 @@
 import React, { FC, useRef } from 'react';
 import { StyleSheet, View } from 'react-native';
-import Form from '../../../../components/commonComponents/forms/Form';
-import TextInputWithLabelInside from '../../../../components/commonComponents/Inputs/TextInputWithLableAndValidation';
-import Checkbox from '../../../../components/commonComponents/checkboxs/Checkbox';
+import Form from '../../../../commonComponents/forms/Form';
+import TextInputWithLabelInside from '../../../../commonComponents/Inputs/TextInputWithLableAndValidation';
+import Checkbox from '../../../../commonComponents/checkboxs/Checkbox';
 import useFormAddOrUpdateLogic from './formAddOrUpdateLogic';
 import { IFormAddOrUpdateLogic } from './types';
 

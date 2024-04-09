@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { StyleSheet, View } from "react-native"
 import { IControlButtons } from "./types";
-import ButtonImage from "../../../../../../../components/commonComponents/buttons/ButtonImage";
+import ButtonImage from "../../../../../../../commonComponents/buttons/ButtonImage";
 import imgUpdate from '../../../../../../../assets/images/edit-2-svgrepo-com.png';
 import imgRemove from '../../../../../../../assets/images/trash-basket-svgrepo-com.png';
 

@@ -4,7 +4,7 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-import FormTwoTextButton from '../../../../../components/commonComponents/forms/FormTwoTextButton';
+import FormTwoTextButton from '../../../../../commonComponents/forms/FormTwoTextButton';
 import { animateLayout } from '../../../../../utils/animation';
 import { IItemListTasks } from './types';
 import OptionsItem from './components/OptionsItem/OptionsItem';

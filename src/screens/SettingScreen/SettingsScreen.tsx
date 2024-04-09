@@ -9,7 +9,7 @@ import { useAuth } from '../../contexts/auth/AuthContext';
 import { useSelector, useDispatch } from 'react-redux';
 import { onLightTheme, onDarkTheme } from '../../redux/slices/themeSlice';
 
-import Button from '../../components/commonComponents/buttons/Button';
+import Button from '../../commonComponents/buttons/Button';
 
 /** Настройки */
 function SettingScreen() {

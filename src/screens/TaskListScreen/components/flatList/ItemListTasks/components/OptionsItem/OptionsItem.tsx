@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import Checkbox from "../../../../../../../components/commonComponents/checkboxs/Checkbox";
+import Checkbox from "../../../../../../../commonComponents/checkboxs/Checkbox";
 import { FC } from "react";
 import { IOptionsItem } from "./types";
 
