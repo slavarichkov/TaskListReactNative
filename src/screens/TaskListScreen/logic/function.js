@@ -1,4 +1,4 @@
-import apiTask from "../../../services/api";
+import apiTask from "../../../services/apiTask";
 import { getDeviceId } from "../../../utils/asyncStoreFunctions";
 
 async function getTasksFromServer() {

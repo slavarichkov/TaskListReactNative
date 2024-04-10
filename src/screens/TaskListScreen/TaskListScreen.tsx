@@ -3,7 +3,7 @@ import React from 'react';
 import { Dimensions, FlatList, ListRenderItem, StyleSheet, View } from 'react-native';
 import { useTheme } from '../../contexts/theme/ThemeContext';
 import { useSelector } from 'react-redux';
-import { useTaskLogic } from './logic/TaskListLogic';
+import { useTaskLogic } from './logic/taskListLogic';
 import { TaskType } from '../../models/TaskModel';
 import HeaderListTasks from './components/flatList/HeaderListTasks/HeaderListTasks';
 import ItemListTasks from './components/flatList/ItemListTasks/ItemListTasks';
@@ -65,16 +65,16 @@ const TaskListScreen = () => {
         data={showingTasks}
         renderItem={ItemList}
         keyExtractor={item => item._id}
-        style={styles.flatList} 
+        style={styles.flatList}
         contentContainerStyle={{ alignItems: 'center', justifyContent: 'center' }}
         ListHeaderComponent={HeaderList}
-        ListFooterComponent={FooterList} 
+        ListFooterComponent={FooterList}
         ListEmptyComponent={isLoading === "isInitLoading" ? <Loader /> : <></>}
         ItemSeparatorComponent={ItemSeparator}
         refreshing={isLoading === "isRereshing"}
         onRefresh={fetchTasks}
       />
-      {isOpenededFormAddTasks ? (
+      {isOpenededFormAddTasks && (
         <FormAddOrUpdate
           isVisible={isOpenededFormAddTasks}
           handleSubmitAdd={createTasks}
@@ -83,8 +83,6 @@ const TaskListScreen = () => {
           isSubmitLoading={isLoading === "isSubmitLoading"}
           updatingTask={updatingItem}
         />
-      ) : (
-        <></>
       )}
     </View>
   );

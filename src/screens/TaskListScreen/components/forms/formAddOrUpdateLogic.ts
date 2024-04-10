@@ -31,7 +31,6 @@ const useFormAddOrUpdateLogic = ({ handleSubmitAdd, handleSubmitUpdate, updating
           isDone: false,
           date: '', // Введите здесь дату, если это необходимо
         };
-        console.log(taskObj)
         handleSubmitAdd(taskObj);
       }
     }

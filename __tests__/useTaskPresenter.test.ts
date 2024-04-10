@@ -1,6 +1,6 @@
 import jest from 'jest';
 import {Alert} from 'react-native';
-import { useTaskLogic } from '../src/screens/TaskListScreen/logic/TaskListLogic';
+import { useTaskLogic } from '../src/screens/TaskListScreen/logic/taskListLogic';
 import {getDeviceId} from '../src/utils/asyncStoreFunctions';
 const {createTasks} = useTaskLogic();
 

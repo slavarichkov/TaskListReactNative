@@ -1,24 +1,24 @@
 import { useEffect, useState } from 'react';
 import { Alert } from 'react-native';
 import { TaskType } from '../../../models/TaskModel';
-import apiTask from '../../../services/api';
+import apiTask from '../../../services/apiTask';
 import { getDeviceId } from '../../../utils/asyncStoreFunctions';
 import { sortByDateAscending } from '../../../utils/functions';
 import { getTasksFromServer, getUpdatedTasks } from './function';
 //Redux
 import { useSelector, useDispatch } from 'react-redux';
 import {
-  setTasks, // зписать массив
-  addTask, // добавить задачу в список
-  removeTask, // удалить задачу из списка
-  updateTask, // обновит задачу
-  setShowingTasks, // Наполнить отображаемые задачи
+  setTasks, 
+  addTask, 
+  removeTask, 
+  updateTask, 
+  setShowingTasks,
 } from '../../../redux/slices/tasks/taskSlice';
 
 export const useTaskLogic = () => {
   const dispatch = useDispatch();
   const tasks = useSelector((state) => state.tasks.tasks);
-  const [isOpenededFormAddTasks, setOpenedFormAddTasks] = useState<boolean>(false); // Формы
+  const [isOpenededFormAddTasks, setOpenedFormAddTasks] = useState<boolean>(false); 
   const [updatingItem, setUpdatingItem] = useState<TaskType | undefined>();
   const [isLoading, setLoading] = useState<"isSubmitLoading" | "isInitLoading" | "isRefreshing" | false>(false); // Лоадеры
   const [isImportantTasks, setImportantTasks] = useState<boolean>(false); // Фильтр
