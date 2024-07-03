@@ -46,10 +46,6 @@ backend https://github.com/slavarichkov/TaskListNode
   4.1 перейдите в директорию ios и выполните Pod install 
   4.2 Далее npm run ios
 
-## Видео работы приложения
-
-Вы можете ознакомиться с работой приложения по [этой ссылке](https://disk.yandex.ru/i/R-T7C4zxzu8srg).
-
 ## Важно!
 
 Учтите, что для запуска приложения может потребоваться установленное окружение разработки для React Native. Подробные инструкции можно найти на [официальном сайте React Native](https://reactnative.dev/docs/environment-setup).
